@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.nyu.cloud.networkdiary"
+    android:versionCode="22300"
+    android:versionName="2.23.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <application
+        android:icon="@drawable/network"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock" android:logo="@drawable/network">
+        <activity
+            android:name="edu.nyu.cloud.networkdiary.NetworkLog"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.nyu.cloud.networkdiary.Preferences" />
+        <activity android:name="edu.nyu.cloud.networkdiary.AppTimelineGraph" />
+        <activity android:name="edu.nyu.cloud.networkdiary.OverallAppTimelineGraph" />
+        <activity
+            android:name="edu.nyu.cloud.networkdiary.ErrorDialogActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog" />
+
+        <receiver android:name="edu.nyu.cloud.networkdiary.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="edu.nyu.cloud.networkdiary.NetworkLogService"
+            android:label="NetworkLogService" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+
+</manifest>

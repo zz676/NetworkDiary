@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/log_copy_src_ip"
+    android:title="@string/copy_src_ip"/>
+  <item android:id="@+id/log_copy_dst_ip"
+    android:title="@string/copy_dst_ip"/>
+  <item android:id="@+id/log_whois_src_ip"
+    android:title="@string/whois_src_ip"/>
+  <item android:id="@+id/log_whois_dst_ip"
+    android:title="@string/whois_dst_ip"/>
+  <item android:id="@+id/log_graph"
+    android:title="@string/show_graph"/>
+  <item android:id="@+id/log_toggle_app_notifications"
+    android:title="@string/disable_notifications"/>
+  <item android:id="@+id/log_toggle_app_logging"
+    android:title="@string/block_app"/>
+</menu>
