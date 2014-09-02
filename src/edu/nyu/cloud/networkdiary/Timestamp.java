@@ -1,8 +1,7 @@
 package edu.nyu.cloud.networkdiary;
 
-import java.util.Date;
 import java.text.SimpleDateFormat;
-import java.lang.StringBuilder;
+import java.util.Date;
 
 public class Timestamp {
   static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss.SSS";

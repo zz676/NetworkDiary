@@ -3,7 +3,6 @@ package edu.nyu.cloud.networkdiary;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.preference.PreferenceManager;
 import android.content.SharedPreferences;
 
 public class BootCompletedReceiver extends BroadcastReceiver {

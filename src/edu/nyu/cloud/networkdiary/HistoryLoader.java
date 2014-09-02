@@ -1,11 +1,11 @@
 package edu.nyu.cloud.networkdiary;
 
-import android.util.Log;
+import java.util.concurrent.FutureTask;
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import edu.nyu.cloud.networkdiary.R;
-import java.util.concurrent.FutureTask;
+import android.util.Log;
 
 public class HistoryLoader {
   static boolean canceled = false;

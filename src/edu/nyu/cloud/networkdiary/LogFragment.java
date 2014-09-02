@@ -1,47 +1,40 @@
 package edu.nyu.cloud.networkdiary;
 
-import android.util.Log;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
 import android.app.Activity;
-import android.os.Bundle;
-import android.widget.TextView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.Filter;
-import android.widget.Filterable;
-import android.view.View;
-import android.view.ViewGroup;
 import android.content.Context;
 import android.content.Intent;
-import android.view.LayoutInflater;
-import android.graphics.drawable.Drawable;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.Toast;
-import android.util.TypedValue;
-import android.view.MenuItem;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.text.ClipboardManager;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.LayoutInflater;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
-import android.net.Uri;
-
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Filter;
+import android.widget.Filterable;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
 /* newer API 11 clipboard unsupported on older APIs
 import android.content.ClipboardManager;
 import android.content.ClipData;
 */
-
 /* use older clipboard API to support older devices */
-import android.text.ClipboardManager;
-import android.support.v4.app.Fragment;
-import edu.nyu.cloud.networkdiary.R;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
 
 public class LogFragment extends Fragment {
   // bound to adapter

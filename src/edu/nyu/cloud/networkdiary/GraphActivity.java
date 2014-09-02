@@ -1,31 +1,30 @@
 package edu.nyu.cloud.networkdiary;
 
-import android.app.Activity;
-import android.content.Context;
-import android.os.Bundle;
-import android.widget.ListView;
-import android.widget.ArrayAdapter;
-import android.widget.AdapterView;
-import android.widget.TextView;
-import android.widget.CheckedTextView;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.AdapterView.OnItemClickListener;
-import android.graphics.drawable.Drawable;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.LayoutInflater;
-import android.util.Log;
-import java.lang.Runnable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import com.jjoe64.graphview.GraphView.*;
-import edu.nyu.cloud.networkdiary.R;
+
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.CheckedTextView;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Spinner;
+
+import com.jjoe64.graphview.GraphView.GraphViewSeries;
+import com.jjoe64.graphview.GraphView.OnScaleChangeListener;
 
 public abstract class GraphActivity extends Activity
 {

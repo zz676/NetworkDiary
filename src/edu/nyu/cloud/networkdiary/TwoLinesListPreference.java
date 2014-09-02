@@ -7,15 +7,13 @@ import android.content.res.TypedArray;
 import android.preference.ListPreference;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.RadioButton;
 import android.widget.ListAdapter;
+import android.widget.RadioButton;
 import android.widget.TextView;
-import edu.nyu.cloud.networkdiary.R;
 
 public class TwoLinesListPreference extends ListPreference {
   private CharSequence[] mEntries;

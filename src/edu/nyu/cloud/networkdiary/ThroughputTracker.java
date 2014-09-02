@@ -1,10 +1,10 @@
 package edu.nyu.cloud.networkdiary;
 
-import android.util.Log;
-import edu.nyu.cloud.networkdiary.R;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import android.util.Log;
 
 
 public class ThroughputTracker {

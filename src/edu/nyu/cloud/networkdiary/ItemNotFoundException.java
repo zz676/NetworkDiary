@@ -1,7 +1,12 @@
 package edu.nyu.cloud.networkdiary;
 
 public class ItemNotFoundException extends Exception {
-  public ItemNotFoundException() {
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+public ItemNotFoundException() {
     super();
   }
 

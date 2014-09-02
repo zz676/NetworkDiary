@@ -1,7 +1,5 @@
 package edu.nyu.cloud.networkdiary;
 
-import android.graphics.Color;
-import edu.nyu.cloud.networkdiary.R;
 
 public class Colors {
   public static int[] distinctColor = {

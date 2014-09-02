@@ -1,17 +1,18 @@
 package edu.nyu.cloud.networkdiary;
 
-import android.os.Bundle;
-import android.graphics.Color;
-import android.graphics.drawable.shapes.Shape;
-import android.graphics.drawable.shapes.RectShape;
-import android.graphics.drawable.ShapeDrawable;
-import android.util.Log;
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
+
+import android.graphics.Color;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.RectShape;
+import android.graphics.drawable.shapes.Shape;
+import android.os.Bundle;
+import android.util.Log;
+
 import com.jjoe64.graphview.GraphView.GraphViewData;
 import com.jjoe64.graphview.GraphView.GraphViewSeries;
-import edu.nyu.cloud.networkdiary.R;
 
 public class AppTimelineGraph extends GraphActivity
 {
